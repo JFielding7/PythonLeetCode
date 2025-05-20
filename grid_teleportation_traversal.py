@@ -47,6 +47,7 @@ class Solution:
                                     return dist + 1
                                 q.put((dist + 1, k, l))
                                 visited[k][l] = True
+                            del portals[cell]
                         else:
                             q.put((dist + 1, i, j))
                             visited[i][j] = True
